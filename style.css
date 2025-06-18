@@ -51,19 +51,21 @@ nav{
 }
 
 .header h1{
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: 500;
     color: #fff;
     text-align: center;
-    padding-top: 22%;
+    padding-top: 2%;
 }
 
 .search-bar{
-    background: #fff;
-    width: 70%;
+    background: rgba(255, 255, 255, 0.2);
+    width: 57%;
     margin: 30px auto;
     padding: 6px 10px 6px 30px;
     border-radius: 50px;
+    backdrop-filter: blur(5px); /* optional: adds a nice glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* optional: subtle border */
 }
 
 .search-bar form{
@@ -77,6 +79,7 @@ nav{
     border: 0;
     outline: none;
     background: transparent;
+    font-size: 17px;
 }
 
 .search-bar form button{
@@ -98,3 +101,91 @@ nav{
     flex: 1;
 }
 
+.search-bar form label{
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.sub-title{
+    margin: 50px 0 20px;
+    font-size: 2.2vw;
+    font-weight: 500;
+    color: #333;
+}
+
+
+/* 
+------------------Exclusives----------------------------------- */
+.exclusives{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 30px;
+}
+
+.exclusives div img{
+    width: 90%;
+    border-radius: 10px;
+}
+
+.exclusives div{
+    position: relative;
+}
+
+.exclusives div span{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+/* ---------------Trending Places------------------- */
+.trending{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.trending div img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.trending h3{
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+/* -------------call to action---------- */
+.cta{
+    margin: 80px 0;
+    background-image: linear-gradient(to right, #3f2321, transparent),url(images/banner-2.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color: #fff;
+}
+
+.cta h3{
+    font-size: 4vw;
+    line-height: 5.3vw;
+    font-weight: 500;
+}
+
+.cta p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.cta-btn{
+    background: #ff5361;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: inline-block;
+}
